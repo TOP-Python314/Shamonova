@@ -1,25 +1,31 @@
-number = int(input('enter the number: '))
+# # number = int(input('enter the number: '))
 # УДАЛИТЬ: эти переменные используются каждая только единожды — в их создании нет необходимости
-next_number = number + 1
-previous_number = number - 1
+# # next_number = number + 1
+# # previous_number = number - 1
 # ИСПРАВИТЬ: вывод не соответствует требуемому формату (количество строк, язык)
-print(
+# # print(
     # ИСПОЛЬЗОВАТЬ везде: PEP 8 рекомендует записывать длинные аргументы или большое количество аргументов на нескольких строчках
-    'the previous number from',
-    number,
-    'is',
-    previous_number,
-    'the next number from',
-    number,
-    'is',
-    next_number
-)
+    # # 'the previous number from',
+    # # number,
+    # # 'is',
+    # # previous_number,
+    # # 'the next number from',
+    # # number,
+    # # 'is',
+    # # next_number
+# # )
 # КОММЕНТАРИЙ: в случае если вы будете генерировать строку не для человека, а для другой функции/класса/программы — это может стоить вам неработающего приложения
-
 
 # ИСПОЛЬЗОВАТЬ везде: PEP 8 рекомендует добавлять пробелы после символа # — в большинстве редакторов кода, включая Notepad++, это делает команда "Вкл./Выкл. комментарий"
 # enter the number: 30
 # the previous number from 30 is 29 the next number from 30 is 31
 
-
 # ИТОГ: нужно лучше, доработать — 1/3
+
+number = int(input('введите число: '))
+print(f"""Следующее за числом {number} число: {number + 1}
+Для числа {number} предыдущее число: {number - 1}""")
+
+# введите число: 5
+# Следующее за числом 5 число: 6
+# Для числа 5 предыдущее число: 4

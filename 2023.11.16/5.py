@@ -1,13 +1,11 @@
-mile_1 = input('enter first part of a mile: ')
-mile_2 = input('enter second part of a mile: ')
+mile_1 = input('введите первую часть мили: ')
+mile_2 = input('введите вторую часть мили: ')
 miles_result = float(mile_1 + '.' + mile_2)
 # УДАЛИТЬ: эта переменная используется только единожды — в её создании нет необходимости
-kilometers_result = miles_result * 1.61
 # ИСПОЛЬЗОВАТЬ везде: PEP 8 не рекомендует отделять скобки вызова от имени функции
 # ИСПРАВИТЬ: вывод не соответствует требуемому формату (язык)
-print(f'{miles_result} miles = {kilometers_result:.2f} kilometers')
+print(f'{miles_result} миль = {miles_result*1.61:.2f} километров')
 # КОММЕНТАРИЙ: в случае если вы будете генерировать строку не для человека, а для другой функции/класса/программы — это может стоить вам неработающего приложения
-
 
 # enter first part of a mile: 1
 # enter second part of a mile: 2
@@ -17,5 +15,9 @@ print(f'{miles_result} miles = {kilometers_result:.2f} kilometers')
 # enter second part of a mile: 77
 # 55.77 miles = 89.79 kilometers
 
-
 # ИТОГ: доработать — 3/5
+
+# после изменений кода
+# введите первую часть мили: 3
+# введите вторую часть мили: 4
+# 3.4 миль = 5.47 километров
